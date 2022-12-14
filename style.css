@@ -7,9 +7,26 @@ h1 {
 
 .top {
 	width: 100%;
-	height: 500px;
-	background: grey;
+	height: 100vh;
+	background: #0c0e15b4;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.logo {
+	margin-bottom: 20px;
+}
+.titleSplash {
+	text-align: center;
+	color: white;
+}
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -50;
 }
