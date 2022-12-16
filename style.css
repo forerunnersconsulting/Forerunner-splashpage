@@ -167,9 +167,11 @@ form{
 	opacity: .15;
 }
 
-.summary p{
+.summary {
 	position: relative;
 	z-index: 50;
+	font-size: 18px;
+	font-weight: 100;
 
 }
 
@@ -264,5 +266,13 @@ h2{
 .logoBack{
 	bottom: 625px;
 	height: 700px;
+}
+.summary{
+	text-align: center;
+}
+h2{text-align: center;}
+.decorativeLine{
+	margin-left: auto;
+	margin-right: auto;
 }
   }
