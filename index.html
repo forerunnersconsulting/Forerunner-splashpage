@@ -18,45 +18,97 @@
 			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-			
-				<section class="top container-sm">
-            <video src="./assets/gridBackground.mp4" autoplay loop playsinline muted></video>
-			<nav>
-				<img src="./assets/foreRunnerLogoFull.svg" width="200px" alt="">
-			</nav>
+		<nav>
+			<img src="./assets/foreRunnerLogoFull.svg" width="200px" alt="" />
+		</nav>
+		<section class="top ">
+			<video
+				src="./assets/gridBackground.mp4"
+				autoplay
+				loop
+				playsinline
+				muted
+			></video>
+
 			<div class="titleSplash">
-                <img class="logo" src="./assets/foreRunnerLogo.svg" height="100px" alt="">
-                <h1>Greatness Awaits.</h1>
-				<div class="tagline">
-					<span>Strategy</span>
-					<div class="square"></div>
-					<span>Analytics</span>
-					<div class="square"></div>
-					<span>Change</span>
+				<img
+					class="logo"
+					src="./assets/foreRunnerLogo.svg"
+					height="100px"
+					alt=""
+				/>
+				<h1>Coming Soon.</h1>
+				<div class="tagline container-sm ">
+					<span class="col-sm-3">Strategy</span>
+					<!-- <div class="square"></div> -->
+					<span class="col-sm-3">Analytics</span>
+					<!-- <div class="square"></div> -->
+					<span class="col-sm-3">Change</span>
 				</div>
-				<div class="info">Are you interested in what Forerunners Consulting can do for you and your organization? Keep up to date with us and our initiatives by filling out the form below.</div>
-				<form>
-					<label for="lname">Last name:</label><br>
-					<input type="text" id="lname" name="lname" value="Doe"><br><br>
-					<input type="submit" value="Submit">
-				  </form> 
+				<div class="info">
+					Are you interested in what Forerunners Consulting can do for you and
+					your organization? Keep up to date with us and our initiatives by
+					filling out the form below.
+				</div>
+				<form action="https://formspree.io/f/mrgvzgyy" method="POST">
+					<label for="email">Email Address</label><br />
+					<input
+						class="col-lg-5"
+						type="text"
+						id="email"
+						name="email"
+						value="Please enter your Email address"
+					/>
+					<input id="submit" type="submit" value="Submit" />
+				</form>
+				<a href="#about">
+				<img class="arrow" src="./assets/arrow.svg" height="50px" alt="" />
+			</a>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="aboutContent container-sm">
-				<h2> Who we are</h2>
+				<h2>Who we are</h2>
 				<div class="decorativeLine"></div>
 				<p class="summary col-lg-7">
-					Forerunners is a boutique supply chain consulting firm based on Washington D.C., with team members working remotely across the world. Unlike traditional consulting firms, we challenge our clients, forcing decisions that grow revenue or reduce costs through less obvious approaches to historically poorly defined problems. This approach, coupled with our proven problem-solving methodologies, has been perfected through years of experience developing supply chain strategies and implementing solutions for manufacturers, retailers, logistics service providers, and private equity firms. 
+					Forerunners is a boutique supply chain consulting firm based on
+					Washington D.C., with team members working remotely across the world.
+					Unlike traditional consulting firms, we challenge our clients, forcing
+					decisions that grow revenue or reduce costs through less obvious
+					approaches to historically poorly defined problems. This approach,
+					coupled with our proven problem-solving methodologies, has been
+					perfected through years of experience developing supply chain
+					strategies and implementing solutions for manufacturers, retailers,
+					logistics service providers, and private equity firms.
 				</p>
-				<hr class="bottom"/>
+				<a href="https://www.linkedin.com/company/forerunnersgroupllc/" target="_blank">
+					<div class="iconContainer">
+						<i
+							class="fa fa-linkedin"
+							id="linkedin"
+							style="font-size: 40px; text-decoration: none"
+						></i>
+					</div>
+				</a>
+				<hr class="bottom" />
+				<img class="logoBack" src="./assets/foreRunnerLogoBG.svg" alt="" />
 			</div>
-			<footer>
-
-			</footer>
+			<footer></footer>
 		</section>
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
