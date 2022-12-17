@@ -22,7 +22,6 @@ body {
 section.top {
 	width: 100%;
 	height: 100vh;
-	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -42,7 +41,7 @@ section.top {
 	color: transparent;
 	background-color: #ed2d05;
 	object-fit: cover;
-	overflow: hidden;
+	
 	width: 100%;
 height: 100vh;
 	position: fixed;
@@ -52,7 +51,6 @@ height: 100vh;
 }
 video {
 	object-fit: cover;
-	overflow: hidden;
 	width: 100%;
 height: 100vh;
 	position: fixed;
