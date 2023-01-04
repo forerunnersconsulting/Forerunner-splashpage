@@ -35,17 +35,21 @@
 	</head>
 	<body>
 		<nav>
-			<img class="navLogo" src="./assets/foreRunnerLogoFull.svg"  alt="" />
+			<img class="navLogo" src="./assets/foreRunnerLogoFull.svg" alt="" />
 		</nav>
 		<section class="top">
+			<div class="backDrop"></div>
+			<div class="videoOverlay"></div>
 			<video
-				src="./assets/gridBackground.mp4"
 				autoplay
 				loop
 				playsinline
 				muted
-			></video>
-			<div class="videoOverlay">You shouldn't be able to see this.</div>
+			>
+			<source src="./assets/gridBackground.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+			<img src="./assets/backgroundFallBack.jpg" title="Your browser does not support the <video> tag">
+			</video>
+			
 
 			<div class="titleSplash">
 				<img
@@ -57,9 +61,15 @@
 				<h1>Coming Soon.</h1>
 				<div class="tagline">
 					<span class="">Strategy</span>
-<div class="analytics" style="display: flex; 	text-align: center;
-align-items: center;
-justify-content: center;">
+					<div
+						class="analytics"
+						style="
+							display: flex;
+							text-align: center;
+							align-items: center;
+							justify-content: center;
+						"
+					>
 						<div class="square"></div>
 						<div class=""><span>Analytics</span></div>
 						<div class="square"></div>
@@ -67,9 +77,8 @@ justify-content: center;">
 					<span class="">Change</span>
 				</div>
 				<div class="info col-sm-10">
-					Are you interested in what Forerunners Consulting can do for you and
-					your organization? Keep up to date with us and our initiatives by
-					filling out the form below.
+					Keep up to date with us and our initiatives by filling out the form
+					below.
 				</div>
 				<form action="https://formspree.io/f/mrgvzgyy" method="POST">
 					<label for="email">Email Address</label><br />
@@ -78,7 +87,7 @@ justify-content: center;">
 						type="text"
 						id="email"
 						name="email"
-						placeholder="Please enter your Email address"
+						placeholder="Please Enter Your Email Address"
 					/>
 					<input id="submit" type="submit" value="Submit" />
 				</form>
@@ -92,19 +101,19 @@ justify-content: center;">
 				<h2>Who we are</h2>
 				<div class="decorativeLine"></div>
 				<p class="summary col-lg-7">
-					Forerunners is a boutique supply chain consulting firm based on
-					Washington D.C., with team members working remotely across the world.
-					Unlike traditional consulting firms, we challenge our clients, forcing
-					decisions that grow revenue or reduce costs through less obvious
-					approaches to historically poorly defined problems. This approach,
-					coupled with our proven problem-solving methodologies, has been
-					perfected through years of experience developing supply chain
-					strategies and implementing solutions for manufacturers, retailers,
-					logistics service providers, and private equity firms.
+					Forerunners is a boutique supply chain consulting firm, with team
+					members working remotely across the world. Unlike traditional
+					consulting firms, we challenge our clients, forcing decisions that
+					grow revenue or reduce costs through less obvious approaches to
+					historically poorly defined problems. This approach, coupled with our
+					proven problem-solving methodologies, has been perfected through years
+					of experience developing supply chain strategies and implementing
+					solutions for manufacturers, retailers, logistics service providers,
+					and private equity firms.
 				</p>
 
-					<div class="iconContainer">
-						<a
+				<div class="iconContainer">
+					<a
 						href="https://www.linkedin.com/company/forerunnersgroupllc/"
 						target="_blank"
 					>
@@ -114,7 +123,7 @@ justify-content: center;">
 							style="font-size: 40px; text-decoration: none"
 						></i>
 					</a>
-					</div>
+				</div>
 
 				<hr class="bottom" />
 				<img class="logoBack" src="./assets/foreRunnerLogoBG.svg" alt="" />

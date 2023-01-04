@@ -37,19 +37,32 @@ section.top {
 	text-align: center;
 	color: white;
 }
-.videoOverlay{
-	color: transparent;
-	background-color: #ed2d05;
+
+.backDrop{
+	background-color: #0c0e15;
 	object-fit: cover;
-	
 	width: 100%;
 height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: -90;
+	z-index: -190;
+}
+.videoOverlay{
+	color: transparent;
+	background-color: #ed2d05;
+	object-fit: cover;
+	z-index: -10;
+	width: 100%;
+height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	mix-blend-mode: multiply;
+	
 }
 video {
+	background-color: #0c0e15;
 	object-fit: cover;
 	width: 100%;
 height: 100vh;
@@ -57,7 +70,7 @@ height: 100vh;
 	top: 0;
 	left: 0;
 	z-index: -50;
-	mix-blend-mode: multiply;
+	
 	
 }
 h1 {
@@ -96,7 +109,7 @@ nav {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 .tagline span {
 	font-family: "EB Garamond", serif;
@@ -130,7 +143,7 @@ nav {
 	max-width: 875px;
 	font-size: 1.5rem;
 	margin: 0px auto;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	font-weight: 300;
 }
 hr {
@@ -165,12 +178,13 @@ input#email {
 	color: rgba(255, 255, 255, 0.75);
 	padding: 0px 30px;
 	font-weight: 100;
-	font-size: 1rem;
+	font-size: 1.15rem;
 }
 
 input#submit {
 	background-color: #ed2d05;
 	border: solid 1px #ed2d05;
+	color: #0c0e15;
 	padding: 10px 30px;
 	font-weight: 800;
 	font-size: 1.25rem;
@@ -276,6 +290,11 @@ input:focus-visible {
 }
 
 @media screen and (max-width: 991px) {
+	section.top{
+		height: fit-content;
+		padding-top: 200px;
+		padding-bottom: 200px ;
+	}
 	.navLogo {
 		width: 125px;
 	}
